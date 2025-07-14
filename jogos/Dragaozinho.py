@@ -129,7 +129,8 @@ while saldo >= aposta_total:
 
     print(f"🎰 RODADA {rodadas}")
     mostrar_grade(grade)
-    print(f"\n💸 Ganhou: R$ {ganho:.2f}")
+    print(f"\n💶 Apostou: R$ {aposta_total:.2f}")
+    print(f"💸 Ganhou: R$ {ganho:.2f}")
     print(f"💰 Saldo: R$ {saldo:.2f}")
     print(f"✖️  Multiplicador:{visualizar_multi}")
     print(f"🤑  Rodadas da Fortuna!!") if rodada_da_fortuna else None

@@ -50,7 +50,6 @@ def calcular_premio(grade):
 
     for linha in paylines:
         simbolos = [grade[x][y] for x, y in linha]
-        tigres = simbolos.count("🐯")
         simbolos_reais = [s for s in simbolos if s != "🐯"]
 
         if not simbolos_reais or all(s == simbolos_reais[0] for s in simbolos_reais):
@@ -87,7 +86,8 @@ while saldo >= aposta_total:
 
     print(f"🎰 RODADA {rodadas}")
     mostrar_grade(grade)
-    print(f"\n💸 Ganhou: R$ {ganho:.2f}")
+    print(f"\n💶 Apostou: R$ {aposta_total:.2f}")
+    print(f"💸 Ganhou: R$ {ganho:.2f}")
     print(f"💰 Saldo: R$ {saldo:.2f}")
     rtp_atual = (total_ganho / (rodadas * aposta_total)) * 100
     print(f"📊 RTP Atual: {rtp_atual:.2f}%")

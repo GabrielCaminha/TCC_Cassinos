@@ -110,7 +110,8 @@ while saldo >= aposta_total:
     rodadas += 1
 
     mostrar_grade(grade)
-    print(f"\n💸 Ganhou: R$ {ganho:.2f}")
+    print(f"\n💶 Apostou: R$ {aposta_total:.2f}")
+    print(f"💸 Ganhou: R$ {ganho:.2f}")
     print(f"💰 Saldo: R$ {saldo:.2f}")
     rtp_atual = (total_ganho / (rodadas * aposta_total)) * 100
     print(f"📊 RTP Atual: {rtp_atual:.2f}%")
